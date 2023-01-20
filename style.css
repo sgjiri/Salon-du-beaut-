@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header > div{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    
+}
+
+header > div > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header > nav{
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #9B5855;
+}
+
+@media (max-width: 767px) {
+    header > div > video {
+        display: none;
+    }
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+    }
+}
+
+#logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+
+}
+header > nav > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header > nav > ul > li{
+    height: 100%;
+    list-style-type: none;
+    
+}
+
+#prestations{
+    display: block;
+    line-height: 90px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: #FCFF38;
+    font-size: 2em;
+    padding: 0 50px;
+    transition: 1s;
+    font-weight: bold;
+
+}
+
+header > nav > ul > li > a{
+    display: block;
+    line-height: 90px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: #FCFF38;
+    font-size: 2em;
+    padding: 0 20px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+
+header > nav > ul > li:hover >a, #prestations:hover{
+   background-color: #A8549A;
+   cursor: pointer;
+}
+
+#sousmenu{
+    transform: scale(0);
+    transform-origin: bottom center;
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    top: -450px;
+    background-color:#A8549A ;
+    margin-left: -50px;
+    opacity: .8;
+}
+
+#sousmenu li{
+    transition: all 300ms ease-in-out;
+    list-style-type: none;
+    padding: 0 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+#sousmenu a{
+    color: #FCFF38;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#prestations:hover  #sousmenu li {
+    transform: scale(1);
+  }
+#prestations:hover  #sousmenu {
+    transform: scale(1);
+  }
+
+  #sousmenu li:hover{
+    background-color: #9B5855;
+  }
