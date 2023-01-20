@@ -39,6 +39,10 @@ header > nav{
     z-index: 99;
 
 }
+header > nav{
+    min-width: 100px;
+}
+
 header > nav > ul{
     display: flex;
     justify-content: space-around;
@@ -49,17 +53,49 @@ header > nav > ul > li{
     list-style-type: none;
     
 }
+#menu-mobil{
+    position: absolute;
+    height: 90px;
+    background-color: #B49051;
+    bottom: 0;
+    right: 0;
+    min-width: 200px;
+    width: 80%;
+    
+    display: none;
+   
+}
 
+.icon{
+    height: 90px;
+    padding: 0 10px;
+  }
+.nav-image{
+    height: 80px;
+    padding: 5px 0;
+}
+#burger{
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background-color:#9B5855;
+    display: none;
+
+}
 #burger > img{
     position: absolute;
-    height: 60px;
-    width: 60px;
-    left: 40px;
-    top: 15px;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+    width: 30px;
     display: none;
     
    
 }
+
+
 
 #prestations{
     display: block;
@@ -94,6 +130,7 @@ header > nav > ul > li:hover >a, #prestations:hover{
    background-color: #A8549A;
    cursor: pointer;
 }
+
 
 #sousmenu{
     transform: scale(0);
@@ -131,6 +168,8 @@ header > nav > ul > li:hover >a, #prestations:hover{
   #sousmenu li:hover{
     background-color: #9B5855;
   }
+
+  
   @media (max-width: 1400px){
     #prestations{
         font-size: 1.2em;
@@ -188,8 +227,30 @@ header > nav > ul > li:hover >a, #prestations:hover{
     header > nav > ul{
         display: none;
     }
+
+    #burger{
+        display: block;
+    }
     #burger > img{
         display: block;
+    }
+    #menu-mobil{
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+    }
+    .icon{
+        height: 40px;
+        padding: 0 10px;
+      }
+    .nav-image{
+        height: 30px;
+        padding: 5px 0;
+    }
+    header > nav {
+        height: 40px;
+        background-color: #B49051;
+        
     }
   
 }
