@@ -185,6 +185,12 @@ header > nav > ul > li:hover >a, #prestations:hover{
     }
 }
 @media screen and (max-width: 700px){
-
+    header > nav > ul{
+        display: none;
+    }
+    #burger > img{
+        display: block;
+    }
+  
 }
 
