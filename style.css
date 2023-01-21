@@ -7,20 +7,19 @@
     max-width: 2000px;
     width: 100%;
 } 
-header{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
 
-header > div{
+header {
     height: 100vh;
     width: 100%;
     position: absolute;
     
 }
+#desktop {
+    height: 100vh;
+}
 
-header > div > video{
+
+#desktop > video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -41,6 +40,7 @@ header > nav{
 }
 header > nav{
     min-width: 100px;
+    transition: all 1s;
 }
 
 header > nav > ul{
@@ -53,36 +53,39 @@ header > nav > ul > li{
     list-style-type: none;
     
 }
-#menu-mobil{
+
+#mobil{
     position: absolute;
-    height: 90px;
-    background-color: #B49051;
     bottom: 0;
-    right: 0;
-    min-width: 200px;
-    width: 80%;
-    
-    display: none;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: all 1.5s;
+    transform-origin: bottom;
+}
+#menu-mobil{
+    float: right;
+    background-color: #B49051;
+    display: flex;
+    justify-content: space-around;
+    width:calc(100% - 50px);
    
 }
 
 .icon{
-    height: 90px;
+    height: 40px;
     padding: 0 10px;
   }
 .nav-image{
-    height: 80px;
+    height: 30px;
     padding: 5px 0;
 }
 #burger{
-    position: absolute;
+    float: left;
     width: 50px;
-    top: 0;
-    left: 0;
-    height: 40px;
+    height: 100%;
     background-color:#9B5855;
-    display: none;
-
+    cursor: pointer;
 }
 #burger > img{
     position: absolute;
@@ -90,7 +93,6 @@ header > nav > ul > li{
     left: 10px;
     top: 10px;
     width: 30px;
-    display: none;
     
    
 }
@@ -200,10 +202,10 @@ header > nav > ul > li:hover >a, #prestations:hover{
 }
 
 @media (max-width: 900px) {
-    header > div > video {
+    #desktop > video {
         display: none;
     }
-    header > div{
+    #desktop{
         background: url(./img/vue-profil-jolie-jeune-femme-qui-equilibre-son-energie-lors-seance-reiki-dans-clinique-sante-spa_662251-1994.webp) center center / cover no-repeat ;;
     }
     body {
@@ -224,34 +226,27 @@ header > nav > ul > li:hover >a, #prestations:hover{
     }
 }
 @media screen and (max-width: 700px){
-    header > nav > ul{
-        display: none;
+#mobil{
+        height: 40px;
     }
 
-    #burger{
-        display: block;
-    }
-    #burger > img{
-        display: block;
-    }
-    #menu-mobil{
-        display: flex;
-        justify-content: space-around;
-        height: 40px;
-    }
-    .icon{
-        height: 40px;
-        padding: 0 10px;
-      }
-    .nav-image{
-        height: 30px;
-        padding: 5px 0;
-    }
-    header > nav {
-        height: 40px;
-        background-color: #B49051;
-        
-    }
-  
+#menu{
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    transform: all 1s;
 }
 
+#menu.active{
+    height: 100vh;
+    z-index: 99;
+    
+}
+#menu.active > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+}
