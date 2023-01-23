@@ -30,6 +30,9 @@ header > nav{
     height: 90px;
     width: 100%;
     background-color: #9B5855;
+    display: flex;
+    justify-content: space-around;
+    
 }
 #logo{
     position: absolute;
@@ -38,14 +41,12 @@ header > nav{
     z-index: 99;
 
 }
-header > nav{
-    min-width: 100px;
-    transition: all 1s;
-}
+
 
 header > nav > ul{
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 header > nav > ul > li{
@@ -93,8 +94,17 @@ header > nav > ul > li{
     left: 10px;
     top: 10px;
     width: 30px;
-    
-   
+}
+
+#croix {
+    color: #FCFF38;
+    text-transform: uppercase;
+   font-weight: bold; 
+   height: 0;
+   width: 30px;
+   position: absolute;
+   font-size: 1.5em;
+   overflow: hidden;
 }
 
 
@@ -206,7 +216,7 @@ header > nav > ul > li:hover >a, #prestations:hover{
         display: none;
     }
     #desktop{
-        background: url(./img/vue-profil-jolie-jeune-femme-qui-equilibre-son-energie-lors-seance-reiki-dans-clinique-sante-spa_662251-1994.webp) center center / cover no-repeat ;;
+        background: url(./img/vue-profil-jolie-jeune-femme-qui-equilibre-son-energie-lors-seance-reiki-dans-clinique-sante-spa_662251-1994.webp) center center / cover no-repeat ;
     }
     body {
         background: url('poster.jpg');
@@ -240,12 +250,46 @@ header > nav > ul > li:hover >a, #prestations:hover{
 #menu.active{
     height: 100vh;
     z-index: 99;
+   justify-content: space-around;
+   align-items: center;
+    
     
 }
 #menu.active > ul{
-    display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
+
+}
+
+#menu.active #croix{
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#sousmenu{
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    transform: all 1s;
+}
+
+#sousmenu.active{
+    height: 100vh;
+    z-index: 200;
+   justify-content: space-around;
+   align-items: center;
+    
+    
+}
+#sousmenu.active > ul{
+    flex-direction: column;
+    align-items: center;
+    
+    
 
 }
 
