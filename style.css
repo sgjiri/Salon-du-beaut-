@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     letter-spacing:0.1em;
+    font-family: 'EB Garamond', serif;
 }
 #largeur-max{
     max-width: 2000px;
@@ -600,12 +601,6 @@ h2{
 /*section3*/
 
 
-
-
-#section3{
-    
-}
-
 #fomulaire{
     float: left;
     width: 50%;
@@ -684,3 +679,35 @@ input[type=checkbox] {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+#selecteur{
+    margin-top: 20px;
+    width: 90%;
+}
+
+#presation-select
+ {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #E0796D;
+    border-bottom: #200F4A 5px solid;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ffffffff;
+    font-weight: bold;
+    background-color:#E0796D;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("./img/Polygon\ 4.png") 90% / 5% no-repeat;
+      }
+select::-ms-expand {
+    display: none;
+  }
+  #select-text-blanc{
+    display: none;
+  }
+  option{
+    color: #3b2d2d4d;
+  }
+
