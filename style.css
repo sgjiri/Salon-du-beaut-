@@ -583,23 +583,104 @@ h2{
     }
 
 }
+
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+/*section3*/
+
+
+
+
 #section3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+    
 }
 
 #fomulaire{
-    
-    width: 900px;
-    height: 560px;
+    float: left;
+    width: 50%;
+    height: 600px;
     background-color: #E0796D;
 }
 #carte{
-    width: 1000px;
+    float: left;
+    height: 600px;
+    width: 50%;
 }
 
 #carte > img{
+    height: 600px;
     width: 100%;
+    object-fit: cover;
+}
+
+#fomulaire > h2{
+    color: #200F4A;
+}
+#fomulaire > form{
+    color: #200F4A;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox{
+    padding: 10px 0;
+}
+
+.sex{
+    color: #fff;
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.grand {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:#E0796D;
+    box-sizing:border-box;
+    border: #200F4A 5px solid;
+}
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.grand:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sex input:checked ~ .grand:after {
+    display: block;
+}
+
+.sex .grand:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
