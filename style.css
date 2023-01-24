@@ -11,7 +11,6 @@
 header {
     height: 100vh;
     width: 100%;
-    position: absolute;
     
 }
 #desktop {
@@ -120,7 +119,12 @@ header > nav > ul > li{
    
 }
 
-
+#fleche{
+    height: 0;
+   width: 30px;
+   position: absolute;
+   overflow: hidden;
+}
 
 #prestations{
     display: flex;
@@ -136,21 +140,23 @@ header > nav > ul > li{
     transition: 1s;
     font-weight: bold;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
     transition: 0.3s;
-    
-
 }
 
 #triangle{
     width: 30px;
-    
     display: none;
+    height: 60px;
+    margin-left: 10px;
 }
 
-#prestations > figure > img{
-    width: 30px;
-    padding-bottom: 20px;
+#triangle > img{
+    width:30px;
+    height: 30px;
+    transform: rotate(180deg);
+    padding-top: 5px;
+    
 }
 header > nav > ul > li > a{
     display: block;
@@ -167,10 +173,24 @@ header > nav > ul > li > a{
 
 
 
-header > nav > ul > li:hover >a, #prestations:hover{
+header > nav > ul > li:hover >a{
    background-color: #A8549A;
    cursor: pointer;
 }
+
+#prestations > p{
+    cursor: pointer;
+    width: 100%;
+}
+#prestations > ul > li >a{
+    display: block;
+    line-height: 90px; 
+}
+#prestations > ul > li{
+    width: 100%;
+}
+
+
 
 
 #sousmenu{
@@ -248,10 +268,6 @@ header > nav > ul > li:hover >a, #prestations:hover{
     #desktop{
         background: url(./img/vue-profil-jolie-jeune-femme-qui-equilibre-son-energie-lors-seance-reiki-dans-clinique-sante-spa_662251-1994.webp) center center / cover no-repeat ;
     }
-    body {
-        background: url('poster.jpg');
-        background-size: cover;
-    }
     #prestations{
         font-size: 0.7em;
     }
@@ -288,9 +304,14 @@ align-items: center;
 #menu.active > ul{
     flex-direction: column;
     align-items: center;
-    
-    
+}
 
+#menu.active > ul >li{
+    width: 100%;
+}
+
+#menu.active > ul >li > a{
+    text-align: center;
 }
 
 #menu.active #croix{
@@ -315,44 +336,108 @@ align-items: center;
     width: 100%;
     opacity: 1;
     z-index: 200;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     transform: scale(1);
     padding: 0;
     display: flex;
     flex-direction: column;
-    
-   
-    
-    
+    cursor: de;
 }
 #sousmenu.active > ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
     display: block;  
+    width: 100%;
+
+}
+
+#sousmenu.active > ul > li{
+    display: block;
+}
+#sousmenu.active > ul > li > a{
+    height: 90px;
+    display: block;
 }
 
 #sousmenu.active #croix2{
-    top: 10px;
+    top: -5px;
     right: 10px;
     height: 30px;
     cursor: pointer;
     overflow:visible;
 }
 
+#sousmenu.active #fleche{
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    cursor: pointer;
+    overflow:visible;
+}
+
+#fleche > img{
+    height: 30px;
+    width: 30px;
+}
+
 #prestations{
     padding-left: 40px;
    
 }
-#prestations:hover{
-    cursor:default;
+#prestations>p{
+    width:auto;
 }
+#prestations>p:hover{
+    
+    background-color:transparent;
+    cursor:default;
+    
+}
+
 
 #triangle{
     display: block;
-    height: 30px;
     cursor: pointer;
+    padding: 0 10px;
+    background-color: #A8549A;
+    opacity: 0.8;
+    border-radius: 25%;
+}
 }
 
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+/*section1*/
+
+
+#section1{
+    background-color: #B0BF3B;
+    display: flex;
+    justify-content: space-around;
+}
+
+.presentation{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 940px;
+    background-color: #A8549A;
+}
+
+.circle{
+    
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 50%;
 }
