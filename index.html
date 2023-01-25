@@ -155,35 +155,154 @@
                             </label>
                         </div>
                         <div class="checkbox">
-                            <label class="sex">famme
+                            <label class="sex">femme
                                 <input type="checkbox"> 
                                 <span class="grand"></span>
                             </label>
                         </div>
-                        <div id="selecteur">
+                        <div class="selecteur">
                             <label for="prestations">prestation:
                             </label>
-                            <select name="presation" id="presation-select">
-                                 <option id="select-text-blanc" value="">Choisisez...</option>
+                            <select name="presation" class="select">
+                                 <option class="select-text-blanc" value="">Choisisez...</option>
                                  <option class="option" valeur="Lévres">Lévres</option>
                                  <option class="option"  valeur="Yeux">Yeux</option>
                                 <option class="option" valeur="Sourcils">Sourcils</option>
                                 <option class="option" valeur="Soin du visage">Soin du visage</option>
                                 <option class="option" valeur="Tricopigmentation">Tricopigmentation</option>
                             </select>
+                        </div>
+                        <div id="tel">
+                            <label for="phone">Votre telephon:</label>
+
+                                <input type="tel" id="phone" name="phone"
+                                pattern="[0-9]{10}"required>
+                                <figure id="ligne">
+                                    <img id="cursor" src="./img/Line 7.png" alt="">
+                                </figure>
+                        </div>
+
+                        <div id="rdv">
+                            <div class="selecteur selecteur-small">
+                                <label for="heure">heure:
+                                </label>
+                                <select name="heure" class="select rendez-vous">
+                                     <option class="select-text-blanc" value="">Choisisez...</option>
+                                     <option class="option" valeur="9h-10h">9h-10h</option>
+                                     <option class="option" valeur="10h-11h">10h-11h</option>
+                                     <option class="option" valeur="11h-12h">11h-12h</option>
+                                     <option class="option" valeur="14h-15h">14h-15h</option>
+                                     <option class="option" valeur="15h-16h">15h-16h</option>
+                                     <option class="option" valeur="16h-17h">16h-17h</option>
+                                     <option class="option" valeur="17h-18h">17h-18h</option>
+                                     <option class="option" valeur="18h-19h">18h-19h</option>
+                                </select>
+                                
+                            </div>
+                            <div class="selecteur selecteur-small">
+                                <label for="jour">jour:
+                                </label>
+                                <select name="jour" class="select rendez-vous">
+                                     <option class="select-text-blanc" value="">Choisisez...</option>
+                                     <option class="option" valeur="1">1</option>
+                                     <option class="option" valeur='2'>2</option>
+                                     <option class="option" valeur='3'>3</option>
+                                     <option class="option" valeur='4'>4</option>
+                                     <option class="option" valeur='5'>5</option>
+                                     <option class="option" valeur='6'>6</option>
+                                     <option class="option" valeur='7'>7</option>
+                                     <option class="option" valeur='8'>8</option>
+                                     <option class="option" valeur='9'>9</option>
+                                     <option class="option" valeur='10'>10</option>
+                                     <option class="option" valeur='11'>11</option>
+                                     <option class="option" valeur='12'>12</option>
+                                     <option class="option" valeur='13'>13</option>
+                                     <option class="option" valeur='14'>14</option>
+                                     <option class="option" valeur='15'>15</option>
+                                     <option class="option" valeur='16'>16</option>
+                                     <option class="option" valeur='17'>17</option>
+                                     <option class="option" valeur='18'>18</option>
+                                     <option class="option" valeur='19'>19</option>
+                                     <option class="option" valeur='20'>20</option>
+                                     <option class="option" valeur='21'>21</option>
+                                     <option class="option" valeur='22'>22</option>
+                                     <option class="option" valeur='23'>23</option>
+                                     <option class="option" valeur='24'>24</option>
+                                     <option class="option" valeur='25'>25</option>
+                                     <option class="option" valeur='26'>26</option>
+                                     <option class="option" valeur='27'>27</option>
+                                     <option class="option" valeur='28'>28</option>
+                                     <option class="option" valeur='29'>29</option>
+                                     <option class="option" valeur='30'>30</option>
+                                     <option class="option" valeur='31'>31</option>          
+                                </select>
+                                
+                                
+                            </div>
+                            <div class="selecteur selecteur-small">
+                                <label for="mois">mois:
+                                </label>
+                                <select name="mois" class="select rendez-vous">
+                                     <option class="select-text-blanc" value="">Choisisez...</option>
+                                     <option class="option" valeur="Janvier">Janvier</option>
+                                     <option class="option" valeur='Fevrier'>Fevrier</option>
+                                     <option class="option" valeur='Mars'>Mars</option>
+                                     <option class="option" valeur='Avril'>Avril</option>
+                                     <option class="option" valeur='Mai'>Mai</option>
+                                     <option class="option" valeur='Juin'>Juin</option>
+                                     <option class="option" valeur='Juillet'>Juillet</option>
+                                     <option class="option" valeur='Août'>Août</option>
+                                     <option class="option" valeur='September'>Septembre</option>
+                                     <option class="option" valeur='Octobere'>Octobere</option>
+                                     <option class="option" valeur='Novembere'>Novembere</option>
+                                     <option class="option" valeur='Descembere'>Descembere</option>   
+                                </select>
+                                
+                                
+                            </div>
+                            
                             
                         </div>
-                        
-                        
+                        <input id="envoyer" type="submit" value="envoyer" />
                     </form>
 
                 </div>
-                <figure id="carte">
-                    <img src="./img/Capture d’écran 2023-01-24 154425.png" alt="carte">
-                </figure>
+                    <figure id="carte">
+                        <iframe id="carte-heigth"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.4176358239242!2d4.8492011973449705!3d45.76281986116055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaf556e24ae9%3A0x654a09c4db9c1193!2s102%20Cr%20Lafayette%2C%2069003%20Lyon!5e0!3m2!1sfr!2sfr!4v1674654533182!5m2!1sfr!2sfr"></iframe>
+                    </figure>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <figure id="lotus-blue">
+                <img id="logo2" src="./img/logo-modified 2.png" alt="logo">
+            </figure>
+            <article>
+                <p id="adresse">
+                    SALON LOTUS <br>
+                    102 Cr Lafayette <br>
+                    69 000 LYON 7
+                </p>
+            </article>
+            <ul id="menu-footer">
+                <li><a href="#">ACUEIL</a></li>
+                <li><a href="#">NOS PRESTATIONS</a></li>
+                <li><a href="#">LA CROLIPOLYSE</a></li>
+                <li><a href="#">LE SALON</a></li>
+                <li><a href="#">CONTACT ET RESERVATION</a></li>
+            </ul>
+            
+
+           
+            <div id="réseaux">
+                <figure>
+                    <a href=""><img src="./img/icons8-facebook-64 2.png" alt="facebook"></a>
+                    
+                </figure>
+                <figure>
+                    <a href=""><img id="insta" src="./img/icons8-instagram-50 2.png" alt="instagram"></a>
+                </figure>
+            </div>
+        </footer>
     </div>
     <script src="./script.js"></script>
 </body>
