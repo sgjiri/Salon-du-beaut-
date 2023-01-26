@@ -150,18 +150,16 @@
                 <div id="fomulaire">
                     <h2>RESERVER UN RENDEZ-VOUS</h2>
                     <form>
-                        <div class="checkbox">
-                            <label class="sex">homme
-                                <input type="checkbox">
-                                <span class="grand"></span>
-                            </label>
+                        <div class="texte">
+                            <label for="nom">Votre nom:</label>
+
+                                <input type="text" class ="info" name="nom" required>
+                                <figure class ="ligne">
+                                    <img class ="cursor" src="./img/Line 7.png" alt="">
+                                </figure>
                         </div>
-                        <div class="checkbox">
-                            <label class="sex">femme
-                                <input type="checkbox"> 
-                                <span class="grand"></span>
-                            </label>
-                        </div>
+                        
+                        
                         <div class="selecteur">
                             <label for="prestations">prestation:
                             </label>
@@ -174,14 +172,29 @@
                                 <option class="option" valeur="Tricopigmentation">Tricopigmentation</option>
                             </select>
                         </div>
-                        <div id="tel">
+                        <div class="texte">
                             <label for="phone">Votre telephon:</label>
 
-                                <input type="tel" id="phone" name="phone"
+                                <input type="tel" class ="info" name="phone"
                                 pattern="[0-9]{10}"required>
-                                <figure id="ligne">
-                                    <img id="cursor" src="./img/Line 7.png" alt="">
+                                <figure class ="ligne">
+                                    <img class ="cursor" src="./img/Line 7.png" alt="">
                                 </figure>
+                        </div>
+                        <div id="choix-hf">
+                            <div class="checkbox">
+                                <label class="sex">homme
+                                    <input type="checkbox">
+                                    <span class="grand"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="sex">femme
+                                    <input type="checkbox"> 
+                                    <span class="grand"></span>
+                                </label>
+                            </div>
+
                         </div>
 
                         <div id="rdv">

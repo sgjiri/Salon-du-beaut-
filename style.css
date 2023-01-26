@@ -723,6 +723,15 @@ h2{
     margin-top: 20px;
 }
 
+#choix-hf{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 .checkbox{
     padding: 10px 0;
 }
@@ -801,13 +810,13 @@ select::-ms-expand {
     color: #3b2d2d4d;
   }
 
-  #tel{
+  .texte{
     margin-top: 20px;
     width: 400px;
     position: relative;
   }
 
-  #phone{
+  .info{
     width: 400px;
     height: 50px;
     border: 1px solid #E0796D;
@@ -822,7 +831,7 @@ select::-ms-expand {
 
   }
 
-  #ligne{
+  .ligne{
     position: absolute;
     top: 45px;
     left: -5px;
@@ -835,7 +844,7 @@ select::-ms-expand {
     100% { opacity: 1; }
   }
 
-  #cursor{
+  .cursor{
     height: 42px;
     width: 5px;
     opacity: 0;
@@ -922,7 +931,7 @@ select::-ms-expand {
     width: 280px;
     height: 30px;
 }
-#phone{
+.info{
     width: 280px;
     height: 30px;
 }
@@ -931,7 +940,7 @@ select::-ms-expand {
     justify-content: flex-start;
     flex-direction: column;
 }
-#tel{
+.texte{
     width: 280px;
 }
 
@@ -939,13 +948,13 @@ select::-ms-expand {
     width: 280px;
 }
 
-#ligne{
+.ligne{
     top: 30px;
     left: -5px;
     height: 1.2em;   
 }
 
-#cursor{
+.cursor{
     height: 1.2em;
 }
 #envoyer {
